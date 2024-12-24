@@ -40,9 +40,9 @@ jobs:
           mv latest-certs/certificates-new.tgz latest-certs/certificates-old.tgz
           pan-chainguard/bin/sprocket.py --verbose --ccadb latest-certs/AllCertificateRecordsReport.csv --fingerprints latest-certs/root-fingerprints.csv --policy latest-certs/policy.json
           pan-chainguard/bin/chain.py --verbose -c latest-certs/AllCertificateRecordsReport.csv -r latest-certs/root-fingerprints.csv -i latest-certs/intermediate-fingerprints.csv --tree latest-certs/certificate-tree.json
-          pan-chainguard/chainring.py --tree latest-certs/certificate-tree.json --format html > latest-certs/certificate-tree.html
-          pan-chainguard/chainring.py --tree latest-certs/certificate-tree.json --format json > latest-certs/certificate-tree.json
-          pan-chainguard/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old latest-certs/certificates-old.tgz --certs-new latest-certs/certificates-new.tgz
+          pan-chainguard/bin/chainring.py --tree latest-certs/certificate-tree.json --format html > latest-certs/certificate-tree.html
+          pan-chainguard/bin/chainring.py --tree latest-certs/certificate-tree.json --format json > latest-certs/certificate-tree.json
+          pan-chainguard/bin/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old latest-certs/certificates-old.tgz --certs-new latest-certs/certificates-new.tgz
 
       - name: commit files
         run: |
