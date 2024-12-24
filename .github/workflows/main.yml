@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install aiohttp
           pip install pan-python
-          pip install tree-lib
+          pip install treelib
 
       - name: download pan-chainguard
         uses: actions/checkout@v3
