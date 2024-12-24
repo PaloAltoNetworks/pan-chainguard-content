@@ -1,9 +1,9 @@
 name: Get PANW Repo Data
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  schedule:
+    - cron: "00 11 * * *" # once a day at 11:00 UTC / 6:00 EST
 
 jobs:
   build:
