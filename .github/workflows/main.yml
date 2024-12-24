@@ -33,7 +33,8 @@ jobs:
 
       - name: Download DBs
         run: |
-          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2
+          ls -l
+          curl -sOJ --create-dirs --output-dir latest-certs https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
           mv latest-certs/certificates-new.tgz latest-certs/certificates-old.tgz
