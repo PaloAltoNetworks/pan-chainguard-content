@@ -50,10 +50,9 @@ jobs:
         run: |
           pan-chainguard/bin/chain.py --verbose -c latest-certs/AllCertificateRecordsReport.csv -r latest-certs/root-fingerprints.csv -i latest-certs/intermediate-fingerprints.csv --tree latest-certs/certificate-tree.json
 
-      - name: Chainring
+      - name: Chainring to HTML
         run: |
           pan-chainguard/bin/chainring.py --tree latest-certs/certificate-tree.json --format html > latest-certs/certificate-tree.html
-          pan-chainguard/bin/chainring.py --tree latest-certs/certificate-tree.json --format json > latest-certs/certificate-tree.json
 
       - name: Link
         run: |
