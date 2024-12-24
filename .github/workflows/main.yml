@@ -1,0 +1,60 @@
+name: Get PANW Repo Data
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10" # install the python version needed
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp
+          pip install pan-python
+          pip install tree-lib
+
+      - name: download pan-chainguard
+        uses: actions/checkout@v3
+        with:
+          repository: "PaloAltoNetworks/pan-chainguard"
+          path: pan-chainguard
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: CCADB
+        continue-on-error: true
+        run: |
+          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2
+          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
+          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
+          mv latest-certs/certificates-new.tgz latest-certs/certificates-old.tgz
+          pan-chainguard/bin/sprocket.py --verbose --ccadb latest-certs/AllCertificateRecordsReport.csv --fingerprints latest-certs/root-fingerprints.csv --policy latest-certs/policy.json
+          pan-chainguard/bin/chain.py --verbose -c latest-certs/AllCertificateRecordsReport.csv -r latest-certs/root-fingerprints.csv -i latest-certs/intermediate-fingerprints.csv --tree latest-certs/certificate-tree.json
+          pan-chainguard/chainring.py --tree latest-certs/certificate-tree.json --format html > latest-certs/certificate-tree.html
+          pan-chainguard/chainring.py --tree latest-certs/certificate-tree.json --format json > latest-certs/certificate-tree.json
+          pan-chainguard/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old latest-certs/certificates-old.tgz --certs-new latest-certs/certificates-new.tgz
+          rm latest-certs/certificates-old.tgz
+
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A latest-certs/*
+          git rm -r pan-chainguard
+          git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
+
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
