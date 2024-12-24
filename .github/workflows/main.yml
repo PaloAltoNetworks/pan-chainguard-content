@@ -43,7 +43,8 @@ jobs:
 
       - name: Sprocket
         run: |
-          pan-chainguard/bin/sprocket.py --verbose --ccadb latest-certs/AllCertificateRecordsReport.csv --fingerprints latest-certs/root-fingerprints.csv --policy latest-certs/policy.json
+          cp old-certs/policy.json latest-certs/policy.json
+          pan-chainguard/bin/sprocket.py --verbose --ccadb latest-certs/AllCertificateRecordsReport.csv --fingerprints latest-certs/root-fingerprints.csv --policy old-certs/policy.json
 
       - name: Chain
         run: |
