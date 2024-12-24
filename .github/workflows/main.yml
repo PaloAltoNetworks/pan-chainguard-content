@@ -32,7 +32,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: CCADB
-        continue-on-error: true
+        continue-on-error: false
         run: |
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
@@ -43,7 +43,6 @@ jobs:
           pan-chainguard/chainring.py --tree latest-certs/certificate-tree.json --format html > latest-certs/certificate-tree.html
           pan-chainguard/chainring.py --tree latest-certs/certificate-tree.json --format json > latest-certs/certificate-tree.json
           pan-chainguard/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old latest-certs/certificates-old.tgz --certs-new latest-certs/certificates-new.tgz
-          rm latest-certs/certificates-old.tgz
 
       - name: commit files
         run: |
