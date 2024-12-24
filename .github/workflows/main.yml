@@ -50,7 +50,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A latest-certs/*
-          git rm -r pan-chainguard
           git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
 
       - name: push changes
