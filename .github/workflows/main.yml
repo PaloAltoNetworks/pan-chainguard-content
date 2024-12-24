@@ -31,14 +31,15 @@ jobs:
           path: pan-chainguard
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Clean Up
+        run: |
+          mv latest-certs old-certs
+
       - name: Download DBs
         run: |
-          ls -l
           curl -sOJ --create-dirs --output-dir latest-certs https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
-          mv latest-certs/certificates-new.tgz latest-certs/certificates-old.tgz
-          ls -l latest-certs
 
       - name: Sprocket
         run: |
@@ -55,7 +56,7 @@ jobs:
 
       - name: Link
         run: |
-          pan-chainguard/bin/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old latest-certs/certificates-old.tgz --certs-new latest-certs/certificates-new.tgz
+          pan-chainguard/bin/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old old-certs/certificates-new.tgz --certs-new latest-certs/certificates-new.tgz
 
       - name: commit files
         run: |
