@@ -53,7 +53,7 @@ jobs:
 
       - name: Chainring to HTML
         run: |
-          pan-chainguard/bin/chainring.py --tree latest-certs/certificate-tree.json --format html > latest-certs/certificate-tree.html
+          pan-chainguard/bin/chainring.py --tree latest-certs/certificate-tree.json --format html > index.html
 
       - name: Link
         run: |
@@ -64,6 +64,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A latest-certs/*
+          git add -A index.html
           git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
 
       - name: push changes
