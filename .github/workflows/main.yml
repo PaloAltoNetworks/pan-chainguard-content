@@ -53,7 +53,7 @@ jobs:
 
       - name: Chainring to HTML
         run: |
-          pan-chainguard/bin/chainring.py --tree latest-certs/certificate-tree.json --format html > index.html
+          pan-chainguard/bin/chainring.py --test-collisions --tree latest-certs/certificate-tree.json --format html > index.html
 
       - name: Link
         run: |
