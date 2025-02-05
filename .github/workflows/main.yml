@@ -1,4 +1,4 @@
-name: Get PANW Repo Data
+name: Update Chainguard Content
 
 on:
   workflow_dispatch:
