@@ -7303,7 +7303,7 @@ OmErLs3WnSNuN3AwCgYIKoZIzj0EAwMDaAAwZQIxAOMMmgHMG1kN2WwGdoxlN3iQ
 IV2VQJYSwT0weeM0fQr0vSZYDHbcXmmOiNjiBgdltAIwYnt492tR6fLNgA0uBeKN
 YKhwVf00sjrM2kYVRtoGaNMJjsJFexRIXRMwDzhYvJ5S
 -----END CERTIFICATE-----","[]"
-"CN=Certum DV TLS G2 R39 CA; O=Asseco Data Systems S.A.; C=PL","CN=Certum Trusted Root CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","83C0A5A76844C840DFAF820FFD02ADF6573A26823EF6AF758A3384A0AC044083","https://crl.certum.pl/certumdvtlsg2r39ca.crl","-----BEGIN CERTIFICATE-----
+"CN=Certum DV TLS G2 R39 CA; O=Asseco Data Systems S.A.; C=PL","CN=Certum Trusted Root CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","83C0A5A76844C840DFAF820FFD02ADF6573A26823EF6AF758A3384A0AC044083","","-----BEGIN CERTIFICATE-----
 MIIGnTCCBIWgAwIBAgIRAKgt2eXcr98TIF5wBD5rlagwDQYJKoZIhvcNAQENBQAw
 ejELMAkGA1UEBhMCUEwxITAfBgNVBAoTGEFzc2VjbyBEYXRhIFN5c3RlbXMgUy5B
 LjEnMCUGA1UECxMeQ2VydHVtIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MR8wHQYD
@@ -7340,7 +7340,7 @@ Omwtipvq0EL1iocJhXdlsG+jIUVs/Sl/Um9JiZV+h/MoytnrPrWMIj+0zz6BdaPP
 TjKfFlzx4NR8gbK7m8sXq6cgP4UAtyvDswebFIRQiuhjqOT9G7+56+4zC0RaEZx/
 LwoFE+ObVXxX674szQvIc+7WPCooVsUbwZIikzJqZb4gJQ1OQx23CgyyYlsPHIDN
 8FpPkganuCwy++7umTkM7+Q=
------END CERTIFICATE-----",""
+-----END CERTIFICATE-----","[]"
 "CN=Certum EC-384 CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","CN=Certum Trusted Network CA; OU=Certum Certification Authority; O=Unizeto Technologies S.A.; C=PL","B72450ABF5047A8AF63EC9D87E331484850B1849A2550A82A86DB6B41ED38760","https://crl.certum.pl/cec384ca.crl","-----BEGIN CERTIFICATE-----
 MIIEEDCCAvigAwIBAgIRANr9S/VBIeAn1oaWIl8fzugwDQYJKoZIhvcNAQENBQAw
 fjELMAkGA1UEBhMCUEwxIjAgBgNVBAoTGVVuaXpldG8gVGVjaG5vbG9naWVzIFMu
@@ -7385,7 +7385,7 @@ JpR43KmM0WkM17MwCgYIKoZIzj0EAwMDaAAwZQIxANg5S7igNJqlbY0Oz4wTha/1
 qYkhyEeRV5ysEzaGXi9CSI3gdN34R2c+krl6/qSBGAIwPY7qWovNcmcEEA2qwmhJ
 vvhGPGxV3Hk+Dl8rQukBUWmaQSRYWQesU8bBBGjS5cTe
 -----END CERTIFICATE-----","[]"
-"CN=Certum EV TLS G2 R39 CA; O=Asseco Data Systems S.A.; C=PL","CN=Certum Trusted Root CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","4736F1ECF26A043CB4D8F94DA8302EA9E45F3D311048F3A400D01AEED1E99444","https://crl.certum.pl/certumevtlsg2r39ca.crl","-----BEGIN CERTIFICATE-----
+"CN=Certum EV TLS G2 R39 CA; O=Asseco Data Systems S.A.; C=PL","CN=Certum Trusted Root CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","4736F1ECF26A043CB4D8F94DA8302EA9E45F3D311048F3A400D01AEED1E99444","","-----BEGIN CERTIFICATE-----
 MIIGnTCCBIWgAwIBAgIRAMF1PO5exbeRRKjj88ndvygwDQYJKoZIhvcNAQENBQAw
 ejELMAkGA1UEBhMCUEwxITAfBgNVBAoTGEFzc2VjbyBEYXRhIFN5c3RlbXMgUy5B
 LjEnMCUGA1UECxMeQ2VydHVtIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MR8wHQYD
@@ -7422,7 +7422,7 @@ E3HdlpIxfUiZdzQG/wRJ/4jd3Ja00yzniK3tXzZ7ciNE6g6B0nPvNx1bOogKv93L
 hndPAx3rz9wgSFbh1jStWPrQKGBAefSBBl2NZ+if2Uq/LodwMGNSfRFvE7AKCiIw
 CP1cCG4rUJe+cKRIiFEc+fwRHeCfgstGWsTxo3EsZFpDJSO9fGHxQlYcFLgUxb8y
 DcLBMYULZgZUEVSuY06Wu3w=
------END CERTIFICATE-----",""
+-----END CERTIFICATE-----","[]"
 "CN=Certum Extended Validation CA; OU=Certum Certification Authority; O=Unizeto Technologies S.A.; C=PL","CN=Certum Trusted Network CA 2; OU=Certum Certification Authority; O=Unizeto Technologies S.A.; C=PL","7816C7B0566B46783B1C15D8A28D8B0D20CFEB20B3D13F79446E15C4A51C91DF","http://crl.certum.pl/evca2.crl","-----BEGIN CERTIFICATE-----
 MIIG1jCCBL6gAwIBAgIRAPGHNNSDlYYqDDr25LknOBowDQYJKoZIhvcNAQENBQAw
 gYAxCzAJBgNVBAYTAlBMMSIwIAYDVQQKExlVbml6ZXRvIFRlY2hub2xvZ2llcyBT
@@ -7628,7 +7628,7 @@ X9kFK0eQeJHksT0wCgYIKoZIzj0EAwMDaAAwZQIwOf43to5PWUhNWHz8UmyWAmwS
 wx4uj8htVRRZympO4bDHSkV8RmyG4CqfDuYtF8WkAjEAhbxx4S2GeET6i+OLi/TA
 Ai1jhMtzvFDkRI5mHcxrE1BfDfuYOS9QBZ/Y0mEq38CH
 -----END CERTIFICATE-----","[]"
-"CN=Certum OV TLS G2 R39 CA; O=Asseco Data Systems S.A.; C=PL","CN=Certum Trusted Root CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","F54CE21EA0F79548F1201A619049CA15F065E49A69F26FB9CF1282C7EECF9C4C","https://crl.certum.pl/certumovtlsg2r39ca.crl","-----BEGIN CERTIFICATE-----
+"CN=Certum OV TLS G2 R39 CA; O=Asseco Data Systems S.A.; C=PL","CN=Certum Trusted Root CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","F54CE21EA0F79548F1201A619049CA15F065E49A69F26FB9CF1282C7EECF9C4C","","-----BEGIN CERTIFICATE-----
 MIIGnDCCBISgAwIBAgIQL3siWJoN/OIwfCzWQQ2l0TANBgkqhkiG9w0BAQ0FADB6
 MQswCQYDVQQGEwJQTDEhMB8GA1UEChMYQXNzZWNvIERhdGEgU3lzdGVtcyBTLkEu
 MScwJQYDVQQLEx5DZXJ0dW0gQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxHzAdBgNV
@@ -7665,7 +7665,7 @@ RJtYUJ6dUgVHINgtZqB1bSDiw7/rDQapxi3w7ehSPOkgpS8v1wJqx1eDl+afNqll
 EtWit9azygO+HsT6xJL7nRjNX40+ksKvTZVvxr5LDJpjntIVckyt2XXnoq9nwvuF
 Dnb+Csc4S+9ppsgDFp6Mj4+5SI8AKa0oMmsUBH2n3s2f76uxeSuEURwuxTMFJ7Ui
 el23wRxXFIL7DPC9VE11xA==
------END CERTIFICATE-----",""
+-----END CERTIFICATE-----","[]"
 "CN=Certum Trusted Network CA 2; OU=Certum Certification Authority; O=Unizeto Technologies S.A.; C=PL","CN=Certum Trusted Network CA; OU=Certum Certification Authority; O=Unizeto Technologies S.A.; C=PL","08E7EAC998A62C4155CC4CBC5EDA32F5B41A12C012F29AB3433BD366348149F0","http://crl.certum.pl/ctnca2.crl","-----BEGIN CERTIFICATE-----
 MIIFyTCCBLGgAwIBAgIQG7WPJSrfIwBJKMmuPX7tJzANBgkqhkiG9w0BAQwFADB+
 MQswCQYDVQQGEwJQTDEiMCAGA1UEChMZVW5pemV0byBUZWNobm9sb2dpZXMgUy5B
