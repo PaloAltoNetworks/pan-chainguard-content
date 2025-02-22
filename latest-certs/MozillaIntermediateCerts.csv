@@ -149,7 +149,7 @@ DXTBMwDBPhVcVKaClOQXTAxKNIxMuS43gupyBsynGpOJ9W28PgCCVlJgI6fOlKRs
 +uNzEApHNALtj2vDYIjybeOQJl0FhGOtTseD4pePjVoJVbBZmOSpYqc4gU1K0FAj
 jcorQXolJqnIlrbNdVbchETS/S7yXIiKl2N5n30Dxo9fUFNgstSc+CZ
 -----END CERTIFICATE-----","[http://crl3.digicert.com/AbbottLaboratoriesSecureServerCA.crl]"
-"CN=Abion Intermediate CA; O=Abion AB; C=SE","CN=DigiCert Global Root G2; OU=www.digicert.com; O=DigiCert Inc; C=US","7728F1821E509C76152C22223E7679033344FDC36879C8DDD6ADBC2EF95277B8","","-----BEGIN CERTIFICATE-----
+"CN=Abion Intermediate CA; O=Abion AB; C=SE","CN=DigiCert Global Root G2; OU=www.digicert.com; O=DigiCert Inc; C=US","7728F1821E509C76152C22223E7679033344FDC36879C8DDD6ADBC2EF95277B8","http://crl3.digicert.com/AbionIntermediateCA.crl","-----BEGIN CERTIFICATE-----
 MIIFgzCCBGugAwIBAgIQB7C4Ekw3Mh/qeZ5EntFjyTANBgkqhkiG9w0BAQsFADBhM
 QswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d
 3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBHM
@@ -180,7 +180,7 @@ N8SFoQYKY1xFdvDiiBVC+7c6XdcBCKojRq4J/xGvYEgCT55nznApP6piSIzRR/Ff
 Yxvxg+ZTK/DEE+lEUB2ggUClc7HISvqhtEwRw4zJ4IiG5btR2o+zRJfGzbftCLsS
 RgDuuM4hk1TMSPJ81vcJwzCJ0S3HQWa8L1Urr0CSGfCaZFgvVraSe15zc4bzr0pP
 NMlGjSBLYYZMB2IS2FUYE3epDrRukc=
------END CERTIFICATE-----","[​]"
+-----END CERTIFICATE-----",""
 "CN=Abitab SSL Domain Validated; OU=IDdigital; O=Abitab S.A.; C=UY","CN=Certum Global Services CA SHA2; OU=Certum Certification Authority; O=Unizeto Technologies S.A.; C=PL","E67D18639367C5B29BF7A5683B56B0F0C23155C8FE9452BCFE51681436023742","http://crl.certum.pl/abitabdv.crl","-----BEGIN CERTIFICATE-----
 MIIEujCCA6KgAwIBAgIQEB1CIlXh/kGGZmDEgBd2ETANBgkqhkiG9w0BAQsFADCB
 gzELMAkGA1UEBhMCUEwxIjAgBgNVBAoTGVVuaXpldG8gVGVjaG5vbG9naWVzIFMu
