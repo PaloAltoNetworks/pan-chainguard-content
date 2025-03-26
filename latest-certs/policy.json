@@ -1,5 +1,5 @@
 {
-  "sources": ["mozilla", "google", "apple", "microsoft"],
+  "sources": ["mozilla", "chrome", "apple", "microsoft"],
   "operation": "union",
   "trust_bits": []
 }
