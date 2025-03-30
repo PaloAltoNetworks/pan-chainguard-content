@@ -12,7 +12,7 @@ which can be used to simplify the deployment of
 
 + Get latest *CCADB All Certificate Information* CSV file
 
-+ Run `sprocket.py` with sources Mozilla, Apple, Microsoft and Google
++ Run `sprocket.py` with sources Mozilla, Apple, Microsoft and Chrome
   to create a new custom root fingerprints CSV file
 
 + Run `chain.py` to create:
