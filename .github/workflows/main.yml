@@ -40,6 +40,7 @@ jobs:
           curl -sOJ --create-dirs --output-dir latest-certs https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
           curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
+          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/IntermediateCertsInOneCRLReportCSV
 
       - name: Sprocket
         run: |
@@ -48,7 +49,7 @@ jobs:
 
       - name: Chain
         run: |
-          pan-chainguard/bin/chain.py --verbose -c latest-certs/AllCertificateRecordsReport.csv -r latest-certs/root-fingerprints.csv -i latest-certs/intermediate-fingerprints.csv --tree latest-certs/certificate-tree.json
+          pan-chainguard/bin/chain.py --verbose -c latest-certs/AllCertificateRecordsReport.csv -r latest-certs/root-fingerprints.csv -o latest-certs/IntermediateCertsInOneCRL.csv -i latest-certs/intermediate-fingerprints.csv --tree latest-certs/certificate-tree.json
 
       - name: Chainring to HTML
         run: |
