@@ -37,10 +37,10 @@ jobs:
 
       - name: Download DBs
         run: |
-          curl -sOJ --create-dirs --output-dir latest-certs https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv3
-          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
-          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
-          curl -sOJ --output-dir latest-certs https://ccadb.my.salesforce-sites.com/mozilla/IntermediateCertsInOneCRLReportCSV
+          curl -sOJ --create-dirs --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv3
+          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
+          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
+          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/IntermediateCertsInOneCRLReportCSV
 
       - name: Sprocket
         run: |
