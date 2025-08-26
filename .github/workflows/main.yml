@@ -41,11 +41,12 @@ jobs:
           curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
           curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
           curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/IntermediateCertsInOneCRLReportCSV
+          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV
 
       - name: Sprocket
         run: |
           cp old-certs/policy.json latest-certs/policy.json
-          pan-chainguard/bin/sprocket.py --verbose --ccadb latest-certs/AllCertificateRecordsReport.csv --fingerprints latest-certs/root-fingerprints.csv --policy old-certs/policy.json
+          pan-chainguard/bin/sprocket.py --verbose --ccadb latest-certs/AllCertificateRecordsReport.csv --trust-settings latest-certs/AllIncludedRootCertsCSV.csv --fingerprints latest-certs/root-fingerprints.csv --policy old-certs/policy.json
 
       - name: Chain
         run: |
