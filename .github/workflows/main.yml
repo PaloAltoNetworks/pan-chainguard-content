@@ -57,8 +57,10 @@ jobs:
 
       - name: Link
         run: |
+          set +e   # disable immediate exit on error
           pan-chainguard/bin/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old old-certs/certificates-new.tgz --certs-new latest-certs/certificates-new.tgz
           status=$?
+          set -e   # re-enable "exit on error" for the rest of the step
           if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
             echo "link.py failed with exit code: $status"
             exit $status
