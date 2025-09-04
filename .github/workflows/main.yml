@@ -46,20 +46,38 @@ jobs:
       - name: Sprocket
         run: |
           cp old-certs/policy.json latest-certs/policy.json
-          pan-chainguard/bin/sprocket.py --verbose --ccadb latest-certs/AllCertificateRecordsReport.csv --trust-settings latest-certs/AllIncludedRootCertsCSV.csv --fingerprints latest-certs/root-fingerprints.csv --policy old-certs/policy.json
+          pan-chainguard/bin/sprocket.py --verbose \
+            --ccadb latest-certs/AllCertificateRecordsReport.csv \
+            --trust-settings latest-certs/AllIncludedRootCertsCSV.csv \
+            --fingerprints latest-certs/root-fingerprints.csv \
+            --policy old-certs/policy.json
 
       - name: Chain
         run: |
-          pan-chainguard/bin/chain.py --verbose -c latest-certs/AllCertificateRecordsReport.csv -r latest-certs/root-fingerprints.csv -o latest-certs/IntermediateCertsInOneCRL.csv -i latest-certs/intermediate-fingerprints.csv --tree latest-certs/certificate-tree.json
+          pan-chainguard/bin/chain.py --verbose \
+            -c latest-certs/AllCertificateRecordsReport.csv \
+            -r latest-certs/root-fingerprints.csv \
+            -o latest-certs/IntermediateCertsInOneCRL.csv \
+            -i latest-certs/intermediate-fingerprints.csv \
+            --tree latest-certs/certificate-tree.json
 
       - name: Chainring to HTML
         run: |
-          pan-chainguard/bin/chainring.py --verbose --title 'Root Store: Union of Mozilla, Apple, Chrome, Microsoft' --test-collisions --tree latest-certs/certificate-tree.json --format html > index.html
+          pan-chainguard/bin/chainring.py --verbose \
+            --title 'Root Store: Union of Mozilla, Apple, Chrome, Microsoft' \
+            --test-collisions \
+            --tree latest-certs/certificate-tree.json --format html > index.html
 
       - name: Link
         run: |
           set +e   # disable immediate exit on error
-          pan-chainguard/bin/link.py --verbose -f latest-certs/root-fingerprints.csv -f latest-certs/intermediate-fingerprints.csv -m latest-certs/MozillaIntermediateCerts.csv -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv --certs-old old-certs/certificates-new.tgz --certs-new latest-certs/certificates-new.tgz
+          pan-chainguard/bin/link.py --verbose \
+            -f latest-certs/root-fingerprints.csv \
+            -f latest-certs/intermediate-fingerprints.csv \
+            -m latest-certs/MozillaIntermediateCerts.csv \
+            -m latest-certs/PublicAllIntermediateCertsWithPEMReport.csv \
+            --certs-old old-certs/certificates-new.tgz \
+            --certs-new latest-certs/certificates-new.tgz
           status=$?
           set -e   # re-enable "exit on error" for the rest of the step
           if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
