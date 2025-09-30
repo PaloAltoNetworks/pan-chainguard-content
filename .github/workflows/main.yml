@@ -7,14 +7,12 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
         uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2 # checkout the repository content
-        with:
-          persist-credentials: false  # don't use GITHUB_TOKEN
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          fetch-depth: 0
 
       - name: setup python
         uses: actions/setup-python@7f4fc3e22c37d6ff65e88745f38bd3157c663f7c # v4
@@ -99,5 +97,4 @@ jobs:
       - name: push changes
         uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6 # v0.6.0
         with:
-          ssh: true
           branch: main
