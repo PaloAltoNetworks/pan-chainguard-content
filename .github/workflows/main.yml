@@ -33,7 +33,6 @@ jobs:
         with:
           repository: "PaloAltoNetworks/pan-chainguard"
           path: pan-chainguard
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Clean Up
         run: |
