@@ -235,7 +235,7 @@
 "Internet Security Research Group","ISRG Root X2","Included","serverAuth;clientAuth","Included","Included","Server Authentication;Client Authentication","Included","Websites","69729B8E15A86EFC177A57AFB7171DFC64ADD28C2FCA8CF1507E34453CCB1470"
 "iTrusChina Co., Ltd.","vTrus ECC Root CA","Not Included","","Included","Not Included","","Included","Websites","30FBBA2C32238E2A98547AF97931E550428B9B3F1C8EEB6633DCFA86C5B27DD3"
 "iTrusChina Co., Ltd.","vTrus Root CA","Not Included","","Included","Not Included","","Included","Websites","8A71DE6559336F426C26E53880D00D88A18DA4C6A91F0DCB6194E206C5C96387"
-"Izenpe S.A.","Izenpe.com","Included","serverAuth;clientAuth;emailProtection","Included","Included","Server Authentication","Included","Websites","2530CC8E98321502BAD96F9B1FBA1B099E2D299E0F4548BB914F363BC0D4531F"
+"Izenpe S.A.","Izenpe.com","Included","serverAuth;clientAuth","Included","Included","Server Authentication","Included","Websites","2530CC8E98321502BAD96F9B1FBA1B099E2D299E0F4548BB914F363BC0D4531F"
 "Korea Information Security Agency (KISA)","KISA RootCA 1","Removed","","Not Included","NotBefore","Server Authentication;Client Authentication;Code Signing;OCSP Signing;Secure Email;Time Stamping","Not Yet Included","","6FDB3F76C8B801A75338D8A50A7C02879F6198B57E594D318D3832900FEDCD79"
 "Krajowa Izba Rozliczeniowa S.A. (KIR)","SZAFIR ROOT CA2","Not Included","","Included","Included","Server Authentication;Client Authentication;Secure Email","Included","Websites;Email","A1339D33281A0B56E557D3D32B1CE7F9367EB094BD5FA72A7E5004C8DED7CAFE"
 "LAWtrust","LAWtrust Root CA2 (4096)","Not Included","","Not Included","Included","Client Authentication;Document Signing;Secure Email","Included","Email","48E1CF9E43B688A51044160F46D773B8277FE45BEAAD0E4DF90D1974382FEA99"
