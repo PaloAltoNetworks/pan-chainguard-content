@@ -11737,7 +11737,7 @@ ZOW0CWuY0wIQKaQJhlEl551iozxwfdPSogLTRYIheH2TKNsEdkCPBMPNCJlwesvg
 M9I84OnKs8rMdMQrTnuM6VvWeDXqVatrtaB6JJ/sHepXnBPJ6xVu7PDj796s1y9x
 S1WXIOCGEqocIoK8XfcGcVarrkJEY+BZLFoUSRkXdMIeRQ7WELII1IirsTnP+Z3X
 GFDvVezStUYXMmM/hBS20xnO+HMRo2HGns1/XWBMUr61P7S9EZ9
------END CERTIFICATE-----","[​]"
+-----END CERTIFICATE-----",""
 "CN=DigiCert Assured ID TLS CA; OU=www.digicert.com; O=DigiCert Inc; C=US","CN=DigiCert Assured ID Root CA; OU=www.digicert.com; O=DigiCert Inc; C=US","D7737E5F2D3FFCA429902E9F388CFD6C5959CD35A0FC103CEE2F7E93D1C66A52","http://crl3.digicert.com/DigiCertAssuredIDTLSCA.crl","-----BEGIN CERTIFICATE-----
 MIIE1DCCA7ygAwIBAgIQA1VnVdetA7HTEgPR8rdfYzANBgkqhkiG9w0BAQsFADBlM
 QswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d
@@ -32446,7 +32446,7 @@ R0gBBYwFDAIBgZngQwBAgEwCAYGZ4EMAQICMAoGCCqGSM49BAMDA2cAMGQCMD+q5
 Uq1fSGZSKRhrnWKKXlp4DvfZCEU/MF3rbdwAaXI/KVM65YRO9HvRbfDpV3x1wIwC
 Hvqqpg/8YJPDn8NJIS/Rg+lYraOseXeuNYzkjeY6RLxIDB+nLVDs9QJ3/co89Cd
 -----END CERTIFICATE-----",""
-"CN=Microsoft Azure RSA TLS Issuing CA 03; O=Microsoft Corporation; C=US","CN=DigiCert Global Root G2; OU=www.digicert.com; O=DigiCert Inc; C=US","9D1BC5D2DD75BF8B64F35E7F919E2546C225BE888C1A8CBE82C0E9579234A7ED","http://www.microsoft.com/pkiops/crl/microsoft%20azure%20rsa%20tls%20issuing%20ca%2003.crl","-----BEGIN CERTIFICATE-----
+"CN=Microsoft Azure RSA TLS Issuing CA 03; O=Microsoft Corporation; C=US","CN=DigiCert Global Root G2; OU=www.digicert.com; O=DigiCert Inc; C=US","9D1BC5D2DD75BF8B64F35E7F919E2546C225BE888C1A8CBE82C0E9579234A7ED","http://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2003.crl","-----BEGIN CERTIFICATE-----
 MIIFrDCCBJSgAwIBAgIQBRllJkSaXj0aOHSPXc/rzDANBgkqhkiG9w0BAQwFADBhM
 QswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d
 3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBHM
@@ -32479,7 +32479,7 @@ FYVx8xCuX/j7+q4tH4PiHzzBcfqb3k0iR4DlhiZfDmy4FuNWXGM8ZoMM43EnRN/m
 eqAcMkABZhY4gqeWZbOgxber297PnGOCcIplOwpPfLu1A1K9frVwDzAG096a8L0+
 ItQCmz7TjRH4ptX5Zh9pw==
 -----END CERTIFICATE-----",""
-"CN=Microsoft Azure RSA TLS Issuing CA 03; O=Microsoft Corporation; C=US","CN=Microsoft RSA Root Certificate Authority 2017; O=Microsoft Corporation; C=US","3D3F4B440F933FFD269565EDA9E20E8DF863C9CBE3651D3B476C5B4F4AF5CE28","http://www.microsoft.com/pkiops/crl/microsoft%20azure%20rsa%20tls%20issuing%20ca%2003.crl","-----BEGIN CERTIFICATE-----
+"CN=Microsoft Azure RSA TLS Issuing CA 03; O=Microsoft Corporation; C=US","CN=Microsoft RSA Root Certificate Authority 2017; O=Microsoft Corporation; C=US","3D3F4B440F933FFD269565EDA9E20E8DF863C9CBE3651D3B476C5B4F4AF5CE28","http://www.microsoft.com/pkiops/crl/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2003.crl","-----BEGIN CERTIFICATE-----
 MIIHmjCCBYKgAwIBAgITMwAAADlo6lF9in4wzgAAAAAAOTANBgkqhkiG9w0BAQwF
 ADBlMQswCQYDVQQGEwJVUzEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9u
 MTYwNAYDVQQDEy1NaWNyb3NvZnQgUlNBIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9y
