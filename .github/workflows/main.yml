@@ -46,7 +46,7 @@ jobs:
 
       - name: Download DBs
         run: |
-          curl -sOJ --create-dirs --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv4a
+          curl -sOJ --create-dirs --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv5
           curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
           curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
           curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/IntermediateCertsInOneCRLReportCSV
