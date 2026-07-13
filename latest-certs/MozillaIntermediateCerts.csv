@@ -28087,7 +28087,7 @@ VJa15Vpi+T6adwU6dXTlniP+Lvzxh9cChC23obXBGCydjv+uYjHmBkK+aAADX14O
 +Emmi1l3Lw+yYabFokj7fre//YtXf5Fh8u0zlj2MVhIKB9jOwaMnW1eYCD8uFvlr
 7Cw5SGgu0nNuAXtivoCZpSTsx6h0fisKXxc332rcihsLJF7Sp2MVTnoxgKElUS72
 XelE8I8tkyaNmZBhTgAJGO/CuF3+O1Oi
------END CERTIFICATE-----",""
+-----END CERTIFICATE-----","[http://repository.tls.hinet.net/crl/OVCA-3000-1.crl,http://repository.tls.hinet.net/crl/OVCA-6000-1.crl,http://repository.tls.hinet.net/crl/OVCA-8000-1.crl]"
 "CN=home pl DV TLS G2 R35 CA; O=home.pl S.A.; C=PL","CN=Certum Trusted Root CA; OU=Certum Certification Authority; O=Asseco Data Systems S.A.; C=PL","CA1A6E0BC3B1C2ED099D42D7030577578D13F63B4B9680A6BAA274DF17C9DE58","http://homepldvtlsg2r35ca.crl.certum.pl/homepldvtlsg2r35ca.crl","-----BEGIN CERTIFICATE-----
 MIIGiDCCBHCgAwIBAgIRAKsNarxpYpQH0mKWYMuB2z4wDQYJKoZIhvcNAQENBQAw
 ejELMAkGA1UEBhMCUEwxITAfBgNVBAoTGEFzc2VjbyBEYXRhIFN5c3RlbXMgUy5B
