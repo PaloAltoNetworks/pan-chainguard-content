@@ -59,7 +59,7 @@ jobs:
             --ccadb latest-certs/AllCertificateRecordsReport.csv \
             --trust-settings latest-certs/AllIncludedRootCertsCSV.csv \
             --fingerprints latest-certs/root-fingerprints.csv \
-            --policy old-certs/policy.json
+            --policy latest-certs/policy.json
 
       - name: Chain
         run: |
