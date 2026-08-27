@@ -77,6 +77,16 @@ jobs:
             --test-collisions \
             --tree latest-certs/certificate-tree.json --format html > index.html
 
+      - name: Ratchet update root history and HTML
+        run: |
+          cp old-certs/root-history.json latest-certs/root-history.json
+          pan-chainguard/bin/ratchet.py --verbose \
+            --history latest-certs/root-history.json \
+            --previous-tree old-certs/certificate-tree.json \
+            --tree latest-certs/certificate-tree.json \
+            --title 'Root Store Update History' \
+            --format html > root-history.html
+
       - name: Link
         run: |
           set +e   # disable immediate exit on error
@@ -98,7 +108,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add latest-certs index.html
+          git add latest-certs index.html root-history.html
           git diff --cached --quiet || git commit -m "updated files"
 
       - name: push changes
