@@ -3,7 +3,7 @@ name: Update Chainguard Content
 on:
   workflow_dispatch:
   schedule:
-    - cron: "00 11 * * *" # once a day at 11:00 UTC / 6:00 EST
+    - cron: "00 11 * * *" # once a day at 11:00 UTC
 
 permissions: {}
 
