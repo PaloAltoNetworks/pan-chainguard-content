@@ -46,11 +46,31 @@ jobs:
 
       - name: Download DBs
         run: |
-          curl -sOJ --create-dirs --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv5
-          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
-          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
-          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/mozilla/IntermediateCertsInOneCRLReportCSV
-          curl -sOJ --output-dir latest-certs --write-out "%{filename_effective}\n" https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV
+          download_ccadb() {
+            curl \
+              --silent \
+              --show-error \
+              --fail \
+              --retry 1 \
+              --retry-delay 2 \
+              --remote-name \
+              --remote-header-name \
+              --output-dir latest-certs \
+              --write-out "%{filename_effective}\n" \
+              "$1"
+          }
+
+          mkdir latest-certs
+          download_ccadb \
+            https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv5
+          download_ccadb \
+            https://ccadb.my.salesforce-sites.com/mozilla/MozillaIntermediateCertsCSVReport
+          download_ccadb \
+            https://ccadb.my.salesforce-sites.com/mozilla/PublicAllIntermediateCertsWithPEMCSV
+          download_ccadb \
+            https://ccadb.my.salesforce-sites.com/mozilla/IntermediateCertsInOneCRLReportCSV
+          download_ccadb \
+            https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV
 
       - name: Sprocket
         run: |
