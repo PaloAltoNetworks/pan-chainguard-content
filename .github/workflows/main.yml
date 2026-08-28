@@ -75,7 +75,7 @@ jobs:
           pan-chainguard/bin/chainring.py --verbose \
             --title 'Root Store: Union of Mozilla, Apple, Chrome, Microsoft' \
             --test-collisions \
-            --tree latest-certs/certificate-tree.json --format html > index.html
+            --tree latest-certs/certificate-tree.json --format html > tree.html
 
       - name: Ratchet update root history and HTML
         run: |
@@ -108,7 +108,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add latest-certs index.html root-history.html
+          git add latest-certs tree.html root-history.html
           git diff --cached --quiet || git commit -m "updated files"
 
       - name: push changes
