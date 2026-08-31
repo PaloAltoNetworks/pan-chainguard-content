@@ -10,7 +10,7 @@ which can be used to simplify the deployment of
 
 + Use `pan-chainguard` **main** branch
 
-+ Get latest *CCADB All Certificate Information* CSV file
++ Get latest CCADB and Mozilla certificate data
 
 + Run `sprocket.py` with sources Mozilla, Apple, Microsoft and Chrome
   to create a new custom root fingerprints CSV file
@@ -20,6 +20,9 @@ which can be used to simplify the deployment of
   + a new certificate tree JSON file
 
 + Run `chainring.py` to create a certificate tree HTML document
+
++ Run `ratchet.py` to update the root store history and create a root
+  store history HTML document
 
 + Run `link.py` to create a new certificate archive from the previous
   archive
