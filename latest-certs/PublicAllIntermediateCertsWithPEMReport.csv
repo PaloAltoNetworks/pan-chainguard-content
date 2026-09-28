@@ -34946,7 +34946,7 @@ l08YuW3e95ORCLp+QCztweq7dp4zBncdDQh/U90bZKuCJ/Fp1U1ervShw3WnWEQt
 59vPr5KW7ySaNRB6nJHGDn2Z9j8Z3/VyVOEVqQdZe4O/Ui5GjLIAZHYcSNPYeehu
 VsyuLAOQ1xk4meTKCRlb/weWsKh/NEnfVqn3sF/tM+2MR7cwA130A4w=
 -----END CERTIFICATE-----'"
-"GoDaddy","Starfield Root Certificate Authority - G2","Certainly Intermediate E1","Starfield Root Certificate Authority - G2","Starfield Technologies, Inc.","Certainly Intermediate E1","Certainly","00A207DA718BABA362","3379233C434610C8EAA9361ACBDD24C7D655409C6D680A8C2585FFDA27011EE7","2022 Jun 22","2032 Jun 21","EC secp384r1","SHA256WithRSA","ExtKeyUsageServerAuth,ExtKeyUsageClientAuth","","","","","","","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=1de4922a-9636-4da0-87bb-b139e4901daf","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=8dafb5c3-2ec4-4e27-b240-2996d005d247","Schellman & Company, LLC.","2025.08.21","","'-----BEGIN CERTIFICATE-----
+"GoDaddy","Starfield Root Certificate Authority - G2","Certainly Intermediate E1","Starfield Root Certificate Authority - G2","Starfield Technologies, Inc.","Certainly Intermediate E1","Certainly","00A207DA718BABA362","3379233C434610C8EAA9361ACBDD24C7D655409C6D680A8C2585FFDA27011EE7","2022 Jun 22","2032 Jun 21","EC secp384r1","SHA256WithRSA","ExtKeyUsageServerAuth,ExtKeyUsageClientAuth","","","","","","","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=a7845435-20fa-46fb-9052-8796c493f7a5","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=14566d6a-1e71-4f99-88a8-587ab77d27e0","Schellman & Company, LLC.","2026.08.10","","'-----BEGIN CERTIFICATE-----
 MIID8zCCAtugAwIBAgIJAKIH2nGLq6NiMA0GCSqGSIb3DQEBCwUAMIGPMQswCQYD
 VQQGEwJVUzEQMA4GA1UECBMHQXJpem9uYTETMBEGA1UEBxMKU2NvdHRzZGFsZTEl
 MCMGA1UEChMcU3RhcmZpZWxkIFRlY2hub2xvZ2llcywgSW5jLjEyMDAGA1UEAxMp
@@ -34970,7 +34970,7 @@ ynw4JLGro5+ezOEJfyWFSgymmJST6eXhhrCo7AnIY3+ug4N2koiaXcUcJNNn9Arc
 2UBWDpOOiLtZOLGdH2t7l/X0pnYjPI8/KF9QIsYS6GNa54Nk2fDiNtV2cJA6ViDp
 TZEwtj57fw==
 -----END CERTIFICATE-----'"
-"GoDaddy","Starfield Root Certificate Authority - G2","Certainly Intermediate R1","Starfield Root Certificate Authority - G2","Starfield Technologies, Inc.","Certainly Intermediate R1","Certainly","11831CDE4CB573E5","FEC41E32CA75C295A6240FA639D3ABE3BFB5CB131D6690E2331A176BED2E5BD2","2022 Jun 22","2032 Jun 21","RSA 2048 bits","SHA256WithRSA","ExtKeyUsageServerAuth,ExtKeyUsageClientAuth","","","","","","","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=1de4922a-9636-4da0-87bb-b139e4901daf","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=8dafb5c3-2ec4-4e27-b240-2996d005d247","Schellman & Company, LLC.","2025.08.21","","'-----BEGIN CERTIFICATE-----
+"GoDaddy","Starfield Root Certificate Authority - G2","Certainly Intermediate R1","Starfield Root Certificate Authority - G2","Starfield Technologies, Inc.","Certainly Intermediate R1","Certainly","11831CDE4CB573E5","FEC41E32CA75C295A6240FA639D3ABE3BFB5CB131D6690E2331A176BED2E5BD2","2022 Jun 22","2032 Jun 21","RSA 2048 bits","SHA256WithRSA","ExtKeyUsageServerAuth,ExtKeyUsageClientAuth","","","","","","","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=a7845435-20fa-46fb-9052-8796c493f7a5","https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=14566d6a-1e71-4f99-88a8-587ab77d27e0","Schellman & Company, LLC.","2026.08.10","","'-----BEGIN CERTIFICATE-----
 MIIEoDCCA4igAwIBAgIIEYMc3ky1c+UwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNV
 BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMSUw
 IwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTIwMAYDVQQDEylT
