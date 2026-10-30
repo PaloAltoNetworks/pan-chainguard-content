@@ -29,8 +29,11 @@ which can be used to simplify the deployment of
 
 ## Certificate Archive
 
-The new certificate archive can be used directly by the `guard.py`
-program if you use a root store with all vendor sources.
+The new certificate archive can be used directly by both the
+`guard.py` (PAN-OS)
+and
+`bashguard.py` (SCM)
+programs if you use a root store with all vendor sources.
 
 Or if your root store uses a subset of vendor sources, the archive can
 be used as old certificates by the `link.py` program to create a new
