@@ -75,7 +75,7 @@ jobs:
       - name: Sprocket
         run: |
           cp old-certs/policy.json latest-certs/policy.json
-          pan-chainguard/bin/sprocket.py --verbose \
+          pan-chainguard/bin/sprocket.py --verbose --debug 1 \
             --ccadb latest-certs/AllCertificateRecordsReport.csv \
             --trust-settings latest-certs/AllIncludedRootCertsCSV.csv \
             --fingerprints latest-certs/root-fingerprints.csv \
